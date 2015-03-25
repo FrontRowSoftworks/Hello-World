@@ -33,6 +33,7 @@ angular.module('HelloWorld', ['ionic'])
 .controller('NamesCtrl', function($scope) {
   $scope.names = [
     { title: 'Elizabeth Rego' },
+    {title: 'Stephen Lorello'},
     {title: 'Fake Example Name'}
   ];
 });
