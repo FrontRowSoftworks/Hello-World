@@ -34,6 +34,7 @@ angular.module('HelloWorld', ['ionic'])
   $scope.names = [
     { title: 'Elizabeth Rego' },
     {title: 'Stephen Lorello'},
+    {title: 'Brian `the dude` Phelan'},
     {title: 'Fake Example Name'}
   ];
 });
