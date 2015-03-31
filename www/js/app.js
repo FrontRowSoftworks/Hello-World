@@ -35,6 +35,7 @@ angular.module('HelloWorld', ['ionic'])
     { title: 'Elizabeth Rego' },
     {title: 'Stephen Lorello'},
     {title: 'Brian `the dude` Phelan'},
+    {title: 'Yassin `Sino` Olabi'},
     {title: 'Fake Example Name'}
   ];
 });
