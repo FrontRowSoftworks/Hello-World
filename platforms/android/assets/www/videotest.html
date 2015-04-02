@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="VideoTest">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>FRS - Video Test</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body class="padding">
+<ion-header-bar class="bar-dark" align-title="center">
+    <h1 class="title">Video Test</h1>
+</ion-header-bar>
+<ion-content>
+    <!-- Start of Brightcove Player -->
+
+    <div style="display:none">
+
+    </div>
+
+    <!--
+    By use of this code snippet, I agree to the Brightcove Publisher T and C
+    found at https://accounts.brightcove.com/en/terms-and-conditions/.
+    -->
+
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+    <object id="myExperience4150029284001" class="BrightcoveExperience">
+        <param name="bgcolor" value="#FFFFFF" />
+        <param name="width" value="480" />
+        <param name="height" value="270" />
+        <param name="playerID" value="4149335643001" />
+        <param name="playerKey" value="AQ~~,AAAAAAr-RdE~,IgS0kIfymb2990T3T5bZbH5jC8gyDjak" />
+        <param name="isVid" value="true" />
+        <param name="isUI" value="true" />
+        <param name="dynamicStreaming" value="true" />
+
+        <param name="@videoPlayer" value="4150029284001" />
+    </object>
+
+    <!--
+    This script tag will cause the Brightcove Players defined above it to be created as soon
+    as the line is read by the browser. If you wish to have the player instantiated only after
+    the rest of the HTML is processed and the page load is complete, remove the line.
+    -->
+    <script type="text/javascript">brightcove.createExperiences();</script>
+
+    <!-- End of Brightcove Player -->
+</ion-content>
+</body>
+</html>
